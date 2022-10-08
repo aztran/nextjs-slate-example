@@ -3,7 +3,6 @@ type DefaultElementProps = {
 } & HTMLParagraphElement;
 
 const DefaultElement = ({ attributes, children }: DefaultElementProps) => {
-  console.log({ children, attributes }, 'hai');
   return (
     <p {...attributes}>
       <code>{children}</code>
