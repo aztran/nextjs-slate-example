@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <HStack justifyContent='center' width='100%'>
-        <Box borderRadius='10px' background='white' boxShadow='lg' p={6}>
+        <Box borderRadius='10px' background='white' boxShadow='lg' p={6} width='700px' maxWidth='700px'>
           <RichEditor />
         </Box>
       </HStack>
