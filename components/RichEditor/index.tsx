@@ -9,6 +9,7 @@ import isHotkey from 'is-hotkey';
 type HotkeyType = {
   [x: string]: string;
 };
+
 const RichEditor = () => {
   const editor = useMemo(() => withHistory(withReact(createEditor())), []);
   const renderElement = useCallback((props: any) => <Element {...props} />, []);
@@ -71,7 +72,7 @@ const Element = ({ element, ...props }: any) => {
   }
 };
 
-const Leaf = ({ attributes, children, leaf }: RenderLeafProps) => {
+const Leaf = ({ attributes, children, leaf }: any) => {
   console.log({ leaf });
   if (leaf?.bold) {
     children = <strong>{children}</strong>;
